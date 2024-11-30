@@ -70,6 +70,9 @@ st.markdown(
 
 # Page Header
 st.markdown("""
+    <div style="text-align: right; padding: 1px;">
+        <p>Created by Ritik Raturi<p>
+    </div>
     <div style="text-align: center; padding: 20px;">
         <h1> <span style="color: var(--primaryColor)">Python Code Reviewer🕵️</span></h1>
         <p>Some bugs 🐛 in your python code 💻 ? Enter code below and we will make it bugs free ✨</p>
