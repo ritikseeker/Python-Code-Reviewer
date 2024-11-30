@@ -1,6 +1,3 @@
-'''run on http://localhost:8501 or http://localhost:8502 on bash terminal by typing : 
-streamlit run aiCodeReviewerApp.py --server.port 8501
- As you make changes in code just refresh browser to see the reflected changes '''
 import streamlit as st 
 import google.generativeai as ai
 from environs import Env
@@ -21,7 +18,7 @@ sys_prompt = """You are a helpful Python programming language expert.
                 People will provide you with their python code. If they entered python code then, 
                 You will provide :
                 1. **Bugs Report** : find bugs, syntax or any other errors in the submitted python code.
-                2. **Corrected Code** : provide corrected python code with explaination for each line.
+                2. **Corrected Code** : provide corrected python code with explanation for each line.
                 3. **Suggestions** : Analyse the corrected python code(which you created) and suggest where the code can be further improved for readability, resuability, speed,etc. to make a better python code.
                 If the code is not in python politely remind the user that you are a python code review assistant. """
 model = ai.GenerativeModel(model_name="models/gemini-1.5-flash", system_instruction=sys_prompt)
@@ -111,7 +108,7 @@ if st.session_state.page == "Home":
     st.markdown("""
     #### Features:
     - Identifies bugs and suggests corrections
-    - Provides complete corrected code (with explaination)
+    - Provides complete corrected code (with explanation)
     - Provides suggestions on further improving the corrected code & improved code example based on these suggestions
     """)
     
