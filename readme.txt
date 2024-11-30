@@ -1,5 +1,4 @@
-Use only virtual environment present in this directory for running projects present in this directory
-
 For installing Dependencies:
-pip install google-generativeai
 pip install streamlit
+pip install google-generativeai
+pip install environs(for accessing Api key in .env file, not needed if accessing api key another way)
